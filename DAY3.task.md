@@ -28,8 +28,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube version
 ```
-![image](https://github.com/user-attachments/assets/f16981cd-567f-4641-bf39-caf64312b7ee)
-![image](https://github.com/user-attachments/assets/f98aef39-c1a1-4941-8e16-fdeede4d2170)
+![Screenshot from 2025-03-21 09-53-21](https://github.com/user-attachments/assets/add83714-cc8c-4e65-8b9d-1d6e8a08c4ea)
 
 ### Fix Docker setup
 ```bash
@@ -49,8 +48,10 @@ docker run hello-world
 minikube start --driver=docker
 minikube dashboard
 ```
-![image](https://github.com/user-attachments/assets/70a3995c-436e-472d-81ea-90920026d8e0)
-![image](https://github.com/user-attachments/assets/8d49ff13-7975-4253-8983-37b241648eca)
+![Screenshot from 2025-03-21 09-53-21](https://github.com/user-attachments/assets/2e7eac12-ca97-4ba8-ae66-a8524207f4f5)
+
+![Screenshot from 2025-03-21 09-55-31](https://github.com/user-attachments/assets/6f2eba08-329f-4f6e-8f46-8cf67041acd3)
+
 
 ## Deployinig the docker image from dockerhub
 
@@ -60,23 +61,25 @@ nano  Dockerfile
 npm init -y
 ```
 
-![image](https://github.com/user-attachments/assets/6dd49514-1000-461c-b688-b99bd2900b75)
+![Screenshot from 2025-03-20 15-53-09](https://github.com/user-attachments/assets/3d368ca1-cd54-4ee6-a2c5-6119c727e7dc)
 
 ```bash
 npm init -y // again if the previous command installed npm
 cd ..
-docker pull sanjai4334/docker:latest . // replace with your docker uid/repo:image_tag
+docker pull tharun19stk/docker_stk:latest . // replace with your docker uid/repo:image_tag
 cd docker
 ```
 
-![image](https://github.com/user-attachments/assets/f43cdced-7f44-4021-8d53-51cff5afc63a)
+![Screenshot from 2025-03-20 15-53-53](https://github.com/user-attachments/assets/8ff07c3c-6001-4219-ab91-44d5adeb9543)
+
 
 ```bash
-docker build -t sanjai4334/docker/latest // replace with your docker uid/repo:image_tag
+docker build -t tharun19stk/docker_stk/latest // replace with your docker uid/repo:image_tag
 docker ps -a
 ```
 
-![image](https://github.com/user-attachments/assets/8e05a11b-bceb-4a6e-8a2a-ecf37a760fa7)
+![Screenshot from 2025-03-20 15-53-53](https://github.com/user-attachments/assets/11e2305c-ce60-4121-8b7a-82bbc6414d06)
+
 
 ```bash
 sudo nano nginx-deployment.yaml
@@ -89,8 +92,10 @@ minikube service my-app --url
 curl <url>
 ```
 
-![image](https://github.com/user-attachments/assets/0b3f729e-204c-4f20-ba2f-af829eace370)
+![Screenshot from 2025-03-21 09-38-34](https://github.com/user-attachments/assets/b4a10411-4046-4a1c-bf8a-47d51d1a1543)
+
 
  - open the url in browser
 
-![image](https://github.com/user-attachments/assets/737839dc-6c3a-45a8-a937-bf21a6a78e14)
+![Screenshot from 2025-03-20 15-54-18](https://github.com/user-attachments/assets/5cc41ade-f9e6-4a30-9193-9c1a7d796f2a)
+
